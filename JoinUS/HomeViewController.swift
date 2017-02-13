@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "ic_home.png"))
             // Do any additional setup after loading the view, typically from a nib.
     }
     
