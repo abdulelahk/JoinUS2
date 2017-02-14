@@ -25,23 +25,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-OK-Y8T">
-                                <rect key="frame" x="44" y="656" width="343" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="signupButton"/>
-                                <connections>
-                                    <segue destination="8Hc-Ik-B4c" kind="show" id="eYM-Lk-Y89"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-Jb-lp7">
-                                <rect key="frame" x="44" y="689" width="128" height="31"/>
+                                <rect key="frame" x="44" y="689" width="168" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="twitterButton"/>
+                                <state key="normal" backgroundImage="twitterButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yye-2o-EiV">
-                                <rect key="frame" x="255" y="689" width="133" height="31"/>
+                                <rect key="frame" x="220" y="689" width="168" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Google+Button"/>
+                                <state key="normal" backgroundImage="Google+Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-4j-Je5">
                                 <rect key="frame" x="144" y="441" width="127" height="41"/>
@@ -51,10 +43,6 @@
                                     <action selector="signin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1F-Jn-nNl"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-OS-fLP">
-                                <rect key="frame" x="52" y="73" width="310" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="aPX-yI-FrP">
                                 <rect key="frame" x="53" y="332" width="308" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,6 +63,18 @@
                                     <action selector="PasswordFieldTouched:" destination="BYZ-38-t0r" eventType="touchDown" id="dpS-a8-Bzr"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-OS-fLP">
+                                <rect key="frame" x="52" y="73" width="310" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-OK-Y8T">
+                                <rect key="frame" x="43" y="652" width="348" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="signupButton"/>
+                                <connections>
+                                    <segue destination="8Hc-Ik-B4c" kind="show" id="eYM-Lk-Y89"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="IOA-pG-CNo"/>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131.875" y="137.32394366197184"/>
+            <point key="canvasLocation" x="2130.434782608696" y="136.95652173913044"/>
         </scene>
         <!--My Events-->
         <scene sceneID="fN3-Hu-yp4">
@@ -263,6 +263,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="0Rb-wv-xOb" id="tra-Mq-l1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuG-Hf-MmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
