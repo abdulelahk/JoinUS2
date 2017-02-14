@@ -18,7 +18,8 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     self.email.delegate = self
+        
+        self.email.delegate = self
         self.email.returnKeyType = .done
         self.password.delegate = self
         self.password.returnKeyType = .done

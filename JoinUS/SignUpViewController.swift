@@ -8,12 +8,17 @@
 
 import UIKit
 import Firebase
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController ,UITextFieldDelegate{
     
     //datePicker
     @IBOutlet weak var datePicker: UITextField!
     let datepicker = UIDatePicker()
     //DatePicker
+    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var city: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +55,13 @@ class SignUpViewController: UIViewController {
     }
     //DatePicker - End
     
+    //keyboard return
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        name.resignFirstResponder()
+        email.resignFirstResponder()
+        password.resignFirstResponder()
+        city.resignFirstResponder()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

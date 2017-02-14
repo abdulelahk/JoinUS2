@@ -245,6 +245,9 @@
                                 <rect key="frame" x="0.0" y="661" width="120" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="loginButtonSmall"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="PtF-zx-5LT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-gU-v4c">
                                 <rect key="frame" x="294" y="661" width="120" height="41"/>
@@ -264,7 +267,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="city" destination="b2R-8e-Z8t" id="WUF-VB-gs0"/>
                         <outlet property="datePicker" destination="0Rb-wv-xOb" id="tra-Mq-l1C"/>
+                        <outlet property="email" destination="9N7-ob-DMm" id="Urf-Hz-sDR"/>
+                        <outlet property="name" destination="ell-ZO-rMg" id="TS9-gK-Lg2"/>
+                        <outlet property="password" destination="gnU-kc-4nW" id="2e8-fT-Crs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuG-Hf-MmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
