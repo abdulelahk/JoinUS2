@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "HomeNav")
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "GoToHome")
             
             self.window?.rootViewController = initialViewController
             self.window?.makeKeyAndVisible()
