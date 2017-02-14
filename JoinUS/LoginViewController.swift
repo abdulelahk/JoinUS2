@@ -81,7 +81,19 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
             // correct input
             // login process should be here
             
+            let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            spinner.center = self.view.center
+            spinner.hidesWhenStopped = true
+            spinner.activityIndicatorViewStyle = .whiteLarge
+            self.view.addSubview(spinner)
+            spinner.startAnimating()
+            UIApplication.shared.beginIgnoringInteractionEvents()
+            
+            
             FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!, completion: { (user, error) in
+                
+                spinner.stopAnimating()
+                UIApplication.shared.endIgnoringInteractionEvents()
                 
                 if error != nil {
                     // incorrect email OR password
