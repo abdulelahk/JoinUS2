@@ -64,10 +64,14 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
          
             
             self.present(alert, animated: true, completion: {
-              Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
-                alert.dismiss(animated: true, completion: nil)
-                
-              })
+                if #available(iOS 10.0, *) {
+                    Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
+                        alert.dismiss(animated: true, completion: nil)
+                        
+                    })
+                } else {
+                    // Fallback on earlier versions
+                }
                 
             })
         
@@ -85,10 +89,14 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
                     
                     
                     self.present(alert, animated: true, completion: {
-                        Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
-                            alert.dismiss(animated: true, completion: nil)
-                            
-                        })
+                        if #available(iOS 10.0, *) {
+                            Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
+                                alert.dismiss(animated: true, completion: nil)
+                                
+                            })
+                        } else {
+                            // Fallback on earlier versions
+                        }
                         
                     })
 
