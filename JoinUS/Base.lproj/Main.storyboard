@@ -208,6 +208,9 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="UQ5-pj-sge"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-ob-DMm">
                                 <rect key="frame" x="69" y="337" width="277" height="35"/>
@@ -215,6 +218,9 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="H5W-wu-Feb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="gnU-kc-4nW">
                                 <rect key="frame" x="69" y="380" width="277" height="35"/>
@@ -222,6 +228,9 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="mC2-ne-2PT"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="City" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="b2R-8e-Z8t">
                                 <rect key="frame" x="69" y="423" width="277" height="35"/>
@@ -229,6 +238,9 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="cityField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="Apj-c9-6pZ"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-gX-gOk">
                                 <rect key="frame" x="40" y="63" width="310" height="172"/>

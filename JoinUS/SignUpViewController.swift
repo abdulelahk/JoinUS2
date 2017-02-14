@@ -22,7 +22,6 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //DatePicker
         CreateDatePicker()
         //DatePicker
@@ -66,6 +65,31 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func RemoveInitialText(sender : UITextField){
+        
+        if  ((sender.text == "Name") ||  (sender.text == "Email") ||  (sender.text == "Password") ||  (sender.text == "City") ||  (sender.text == "Password")){
+            
+            sender.text = ""
+        }
+    }
+    
+    @IBAction func nameField(_ sender: Any) {
+        RemoveInitialText(sender: sender as! UITextField)
+    }
+    @IBAction func emailField(_ sender: Any) {
+         RemoveInitialText(sender: sender as! UITextField)
+    }
+
+    @IBAction func passField(_ sender: Any) {
+         RemoveInitialText(sender: sender as! UITextField)
+    }
+    @IBAction func cityField(_ sender: Any) {
+         RemoveInitialText(sender: sender as! UITextField)
+    }
+
+    
+
+    
     
     
 }
