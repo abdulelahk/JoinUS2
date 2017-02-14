@@ -21,7 +21,6 @@
 		41B4422C1E50E2E30043093F /* JoinUSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4422B1E50E2E30043093F /* JoinUSTests.swift */; };
 		41B442371E50E2E30043093F /* JoinUSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B442361E50E2E30043093F /* JoinUSUITests.swift */; };
 		41B442451E50E64A0043093F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B442441E50E64A0043093F /* GoogleService-Info.plist */; };
-		41B442471E50E80B0043093F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B442461E50E80B0043093F /* HomeViewController.swift */; };
 		41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B442481E50E9E60043093F /* SignUpViewController.swift */; };
 		62BEA31AEFFDB9D30F39BF99 /* Pods_JoinUSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924561FBF9AE33B50DD5E7FA /* Pods_JoinUSUITests.framework */; };
 		CC1A4847722723F42AEE5F5C /* Pods_JoinUS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55952D5116041CB057C1407C /* Pods_JoinUS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -69,7 +68,6 @@
 		41B442361E50E2E30043093F /* JoinUSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinUSUITests.swift; sourceTree = "<group>"; };
 		41B442381E50E2E30043093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B442441E50E64A0043093F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		41B442461E50E80B0043093F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41B442481E50E9E60043093F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		55952D5116041CB057C1407C /* Pods_JoinUS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoinUS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F81F5B86E4EFEE46691779 /* Pods-JoinUS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUS/Pods-JoinUS.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				41B4421D1E50E2E30043093F /* Assets.xcassets */,
 				41B4421F1E50E2E30043093F /* LaunchScreen.storyboard */,
 				41B442221E50E2E30043093F /* Info.plist */,
-				41B442461E50E80B0043093F /* HomeViewController.swift */,
 				41765BE71E5347D3007E4C37 /* MyProfileViewController.swift */,
 				41765BE91E534808007E4C37 /* SearchViewController.swift */,
 				41765BEB1E534837007E4C37 /* MyEventsViewController.swift */,
@@ -477,7 +474,6 @@
 				41765BEC1E534837007E4C37 /* MyEventsViewController.swift in Sources */,
 				41765BEA1E534808007E4C37 /* SearchViewController.swift in Sources */,
 				41B442191E50E2E30043093F /* LoginViewController.swift in Sources */,
-				41B442471E50E80B0043093F /* HomeViewController.swift in Sources */,
 				41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */,
 				41B442171E50E2E30043093F /* AppDelegate.swift in Sources */,
 				41765BE61E5343B8007E4C37 /* EventsViewController.swift in Sources */,

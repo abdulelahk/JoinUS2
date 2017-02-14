@@ -227,42 +227,6 @@
             </objects>
             <point key="canvasLocation" x="2867" y="126"/>
         </scene>
-        <!--Home View Controller-->
-        <scene sceneID="FDU-Ih-pbu">
-            <objects>
-                <viewController storyboardIdentifier="HomeView" id="Q1t-fQ-Kve" customClass="HomeViewController" customModule="JoinUS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dDf-l9-11l"/>
-                        <viewControllerLayoutGuide type="bottom" id="3vR-ES-nzf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tfz-wt-1fe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-iV-O4V">
-                                <rect key="frame" x="0.0" y="519" width="320" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="Events" image="EventsIcon" id="ce4-d9-RgF"/>
-                                    <tabBarItem title="search" image="searchIcon" id="aaa-Yp-pnP"/>
-                                    <tabBarItem title="My Events" image="MyEventsIcon" id="tSN-qx-eJD"/>
-                                    <tabBarItem title="Rate" image="RateIcon" id="V1w-lb-MIL"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cvs-iV-O4V" secondAttribute="trailing" id="8Ux-WF-tK9"/>
-                            <constraint firstItem="cvs-iV-O4V" firstAttribute="bottom" secondItem="3vR-ES-nzf" secondAttribute="top" id="YDl-Bs-W9m"/>
-                            <constraint firstItem="cvs-iV-O4V" firstAttribute="leading" secondItem="tfz-wt-1fe" secondAttribute="leading" id="jB2-tU-69Y"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="bMc-WT-n4q"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KId-mb-frQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2522" y="2145"/>
-        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="MA8-oh-a9c">
             <objects>
@@ -353,7 +317,6 @@
         <image name="EventsIcon" width="21" height="25"/>
         <image name="Google+Button" width="177" height="41"/>
         <image name="MyEventsIcon" width="25" height="25"/>
-        <image name="RateIcon" width="25" height="25"/>
         <image name="background" width="375" height="667"/>
         <image name="loginButton" width="135" height="41"/>
         <image name="loginButtonSmall" width="125" height="41"/>
