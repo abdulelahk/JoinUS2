@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     //datePicker
     @IBOutlet weak var datePicker: UITextField!
     let datepicker = UIDatePicker()
-    //DatePicker
+    //!DatePicker
     
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -24,11 +24,33 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         super.viewDidLoad()
         //DatePicker
         CreateDatePicker()
-        //DatePicker
+        //!DatePicker
+        //screen move with keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        //!screen move with keyboard
         // Do any additional setup after loading the view, typically from a nib.
         
      //   self.navigationController?.isNavigationBarHidden = false
 
+    }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0{
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+        
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height
+            }
+        }
     }
     
     //DatePicker - Start
@@ -52,7 +74,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         datePicker.text = dateFormater.string(from: datepicker.date)
         self.view.endEditing(true)
     }
-    //DatePicker - End
+    //!DatePicker - End
     
     //keyboard return
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,6 +83,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         password.resignFirstResponder()
         city.resignFirstResponder()
     }
+    //!keyboard return
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -73,6 +96,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         }
     }
     
+    //clear Field
     @IBAction func nameField(_ sender: Any) {
         RemoveInitialText(sender: sender as! UITextField)
     }
@@ -86,7 +110,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     @IBAction func cityField(_ sender: Any) {
          RemoveInitialText(sender: sender as! UITextField)
     }
-
+    //!clear Field
     
 
     
