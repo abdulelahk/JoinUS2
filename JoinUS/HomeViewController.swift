@@ -39,7 +39,6 @@ class HomeViewController: UIViewController {
         profileImg.layer.borderWidth = 1
         profileImg.layer.masksToBounds = false
         profileImg.layer.borderColor = UIColor.black.cgColor
-        profileImg.layer.shadowOpacity = 0.8
         profileImg.layer.cornerRadius = profileImg.frame.height/2
         profileImg.clipsToBounds = true
         profileImg.image = UIImage(named: "File_000.jpeg")
@@ -54,9 +53,12 @@ class HomeViewController: UIViewController {
         popupImageView.center = self.view.center
         popupImageView.image = profileImg.image
         popupImageView.contentMode = .scaleToFill
+        popupImageView.layer.masksToBounds = false
         popupImageView.isUserInteractionEnabled = true
         popupImageView.layer.borderWidth = 2
         popupImageView.layer.borderColor = UIColor.black.cgColor
+        popupImageView.layer.cornerRadius = popupImageView.frame.height/2
+        popupImageView.clipsToBounds = true
         self.view.addSubview(popupImageView)
 
         
@@ -65,7 +67,9 @@ class HomeViewController: UIViewController {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        popupImageView.removeFromSuperview()
+        
+        self.popupImageView.removeFromSuperview()
+
     }
     
     
