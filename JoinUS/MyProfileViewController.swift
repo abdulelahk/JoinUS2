@@ -18,15 +18,17 @@ class MyProfileViewController: UIViewController {
     @IBAction func Logout(_ sender: Any) {
         
         let firebaseAuth = FIRAuth.auth()
-        do {
-            let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-            spinner.center = self.view.center
-            spinner.hidesWhenStopped = true
-            spinner.activityIndicatorViewStyle = .whiteLarge
-            self.view.addSubview(spinner)
-            spinner.startAnimating()
-            UIApplication.shared.beginIgnoringInteractionEvents()
+        let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        spinner.center = self.view.center
+        spinner.hidesWhenStopped = true
+        spinner.activityIndicatorViewStyle = .whiteLarge
+        self.view.addSubview(spinner)
+        spinner.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
 
+        
+        do {
+            
             
             try firebaseAuth?.signOut()
             
@@ -37,6 +39,24 @@ class MyProfileViewController: UIViewController {
             
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
+            
+            spinner.stopAnimating()
+            UIApplication.shared.endIgnoringInteractionEvents()
+            
+            let alert = UIAlertController(title: nil, message: "Error while logging out! Try Again!", preferredStyle: .alert)
+            
+            
+            self.present(alert, animated: true, completion: {
+                if #available(iOS 10.0, *) {
+                    Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
+                        alert.dismiss(animated: true, completion: nil)
+                        
+                    })
+                } else {
+                    // Fallback on earlier versions
+                }
+                
+            })
         }
 
         
