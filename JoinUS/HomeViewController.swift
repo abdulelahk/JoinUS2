@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
     var popupImageView = UIImageView()
     
     var isMenuShowing = false
-    
+    var ispopUpShowing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
     
     
     func showProfileImage(){
-        
+        if !ispopUpShowing{
         popupImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.height * 0.35, height: UIScreen.main.bounds.height * 0.35))
         popupImageView.center = self.view.center
         popupImageView.image = profileImg.image
@@ -60,16 +60,22 @@ class HomeViewController: UIViewController {
         popupImageView.layer.cornerRadius = popupImageView.frame.height/2
         popupImageView.clipsToBounds = true
         self.view.addSubview(popupImageView)
-
+            ispopUpShowing = !ispopUpShowing
+        }
         
         
     }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         
-        self.popupImageView.removeFromSuperview()
+        
 
+        if (touches.first!).view == popupImageView{
+        self.popupImageView.removeFromSuperview()
+        ispopUpShowing = !ispopUpShowing
+        }
     }
     
     
