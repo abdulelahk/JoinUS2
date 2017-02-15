@@ -1,0 +1,42 @@
+
+/* Class = "UITextField"; text = "Date Of Birth"; ObjectID = "0Rb-wv-xOb"; */
+"0Rb-wv-xOb.text" = "Date Of Birth";
+
+/* Class = "UITabBarItem"; title = "Events"; ObjectID = "8bR-aS-0zg"; */
+"8bR-aS-0zg.title" = "Events";
+
+/* Class = "UITextField"; text = "Email"; ObjectID = "9N7-ob-DMm"; */
+"9N7-ob-DMm.text" = "Email";
+
+/* Class = "UISegmentedControl"; EQ9-Tu-sh2.segmentTitles[0] = "Male"; ObjectID = "EQ9-Tu-sh2"; */
+"EQ9-Tu-sh2.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; EQ9-Tu-sh2.segmentTitles[1] = "Fmale"; ObjectID = "EQ9-Tu-sh2"; */
+"EQ9-Tu-sh2.segmentTitles[1]" = "Fmale";
+
+/* Class = "UITabBarItem"; title = "My Profile"; ObjectID = "GeS-8s-zZw"; */
+"GeS-8s-zZw.title" = "My Profile";
+
+/* Class = "UITextField"; text = "Email"; ObjectID = "aPX-yI-FrP"; */
+"aPX-yI-FrP.text" = "Email";
+
+/* Class = "UITextField"; text = "City"; ObjectID = "b2R-8e-Z8t"; */
+"b2R-8e-Z8t.text" = "City";
+
+/* Class = "UITextField"; text = "Name"; ObjectID = "ell-ZO-rMg"; */
+"ell-ZO-rMg.text" = "Name";
+
+/* Class = "UITextField"; text = "Password"; ObjectID = "fXI-YT-xZ2"; */
+"fXI-YT-xZ2.text" = "Password";
+
+/* Class = "UITextField"; text = "Password"; ObjectID = "gnU-kc-4nW"; */
+"gnU-kc-4nW.text" = "Password";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "pV7-SI-f3v"; */
+"pV7-SI-f3v.title" = "Search";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "sW7-Pu-v6p"; */
+"sW7-Pu-v6p.normalTitle" = "Logout";
+
+/* Class = "UITabBarItem"; title = "My Events"; ObjectID = "uGg-9Y-dj7"; */
+"uGg-9Y-dj7.title" = "My Events";

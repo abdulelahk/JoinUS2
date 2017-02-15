@@ -37,10 +37,15 @@ class LoginViewController: UIViewController , UITextFieldDelegate {
     
     @IBAction func EmailFieldTouched(_ sender: Any) {
         RemoveInitialText(sender: sender as! UITextField)
+        
+        email.becomeFirstResponder()
+    
     }
     
     @IBAction func PasswordFieldTouched(_ sender: Any) {
         RemoveInitialText(sender: sender as! UITextField)
+        password.becomeFirstResponder()
+
 
     }
     

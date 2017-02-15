@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		18F45E71A0EC291F1F78DE10 /* Pods_JoinUSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 020EA1CE01373CF040C1C20C /* Pods_JoinUSTests.framework */; };
 		41765BA81E5261F9007E4C37 /* ic_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 41765BA71E5261F9007E4C37 /* ic_home.png */; };
-		41765BE61E5343B8007E4C37 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41765BE51E5343B8007E4C37 /* EventsViewController.swift */; };
+		41765BE61E5343B8007E4C37 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41765BE51E5343B8007E4C37 /* HomeViewController.swift */; };
 		41765BE81E5347D3007E4C37 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41765BE71E5347D3007E4C37 /* MyProfileViewController.swift */; };
 		41765BEA1E534808007E4C37 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41765BE91E534808007E4C37 /* SearchViewController.swift */; };
 		41765BEC1E534837007E4C37 /* MyEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41765BEB1E534837007E4C37 /* MyEventsViewController.swift */; };
@@ -22,6 +22,7 @@
 		41B442371E50E2E30043093F /* JoinUSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B442361E50E2E30043093F /* JoinUSUITests.swift */; };
 		41B442451E50E64A0043093F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41B442441E50E64A0043093F /* GoogleService-Info.plist */; };
 		41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B442481E50E9E60043093F /* SignUpViewController.swift */; };
+		41FC4F2E1E550703000A3828 /* File_000.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 41FC4F2D1E550703000A3828 /* File_000.jpeg */; };
 		62BEA31AEFFDB9D30F39BF99 /* Pods_JoinUSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924561FBF9AE33B50DD5E7FA /* Pods_JoinUSUITests.framework */; };
 		CC1A4847722723F42AEE5F5C /* Pods_JoinUS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55952D5116041CB057C1407C /* Pods_JoinUS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
@@ -50,7 +51,7 @@
 		256D0C3E40DE6544C69BB2B6 /* Pods-JoinUSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUSTests/Pods-JoinUSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2726D9BC68C4EDDFAC4A5A54 /* Pods-JoinUS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUS/Pods-JoinUS.debug.xcconfig"; sourceTree = "<group>"; };
 		41765BA71E5261F9007E4C37 /* ic_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home.png; sourceTree = "<group>"; };
-		41765BE51E5343B8007E4C37 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		41765BE51E5343B8007E4C37 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		41765BE71E5347D3007E4C37 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		41765BE91E534808007E4C37 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		41765BEB1E534837007E4C37 /* MyEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEventsViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		41B442381E50E2E30043093F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41B442441E50E64A0043093F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		41B442481E50E9E60043093F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		41FC4F2D1E550703000A3828 /* File_000.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = File_000.jpeg; sourceTree = "<group>"; };
 		55952D5116041CB057C1407C /* Pods_JoinUS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoinUS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65F81F5B86E4EFEE46691779 /* Pods-JoinUS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUS/Pods-JoinUS.release.xcconfig"; sourceTree = "<group>"; };
 		924561FBF9AE33B50DD5E7FA /* Pods_JoinUSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoinUSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +144,9 @@
 				41B442441E50E64A0043093F /* GoogleService-Info.plist */,
 				41B442181E50E2E30043093F /* LoginViewController.swift */,
 				41B4421A1E50E2E30043093F /* Main.storyboard */,
-				41765BE51E5343B8007E4C37 /* EventsViewController.swift */,
+				41765BE51E5343B8007E4C37 /* HomeViewController.swift */,
 				41B442481E50E9E60043093F /* SignUpViewController.swift */,
+				41FC4F2D1E550703000A3828 /* File_000.jpeg */,
 				41765BA71E5261F9007E4C37 /* ic_home.png */,
 				41B4421D1E50E2E30043093F /* Assets.xcassets */,
 				41B4421F1E50E2E30043093F /* LaunchScreen.storyboard */,
@@ -306,6 +309,7 @@
 				41B442451E50E64A0043093F /* GoogleService-Info.plist in Resources */,
 				41B4421E1E50E2E30043093F /* Assets.xcassets in Resources */,
 				41B4421C1E50E2E30043093F /* Main.storyboard in Resources */,
+				41FC4F2E1E550703000A3828 /* File_000.jpeg in Resources */,
 				41765BA81E5261F9007E4C37 /* ic_home.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +479,7 @@
 				41B442191E50E2E30043093F /* LoginViewController.swift in Sources */,
 				41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */,
 				41B442171E50E2E30043093F /* AppDelegate.swift in Sources */,
-				41765BE61E5343B8007E4C37 /* EventsViewController.swift in Sources */,
+				41765BE61E5343B8007E4C37 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,11 +632,12 @@
 			baseConfigurationReference = 2726D9BC68C4EDDFAC4A5A54 /* Pods-JoinUS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D63S883E2L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8R2CPVVYA2;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MoathWare.JoinUS;
+				PRODUCT_BUNDLE_IDENTIFIER = Abdulelah.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -643,11 +648,12 @@
 			baseConfigurationReference = 65F81F5B86E4EFEE46691779 /* Pods-JoinUS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D63S883E2L;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8R2CPVVYA2;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MoathWare.JoinUS;
+				PRODUCT_BUNDLE_IDENTIFIER = Abdulelah.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
