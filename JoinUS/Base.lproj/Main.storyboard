@@ -36,7 +36,7 @@
                                 <state key="normal" backgroundImage="Google+Button"/>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="aPX-yI-FrP">
-                                <rect key="frame" x="25" y="238" width="270" height="25"/>
+                                <rect key="frame" x="25" y="237.5" width="270" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aPX-yI-FrP" secondAttribute="height" multiplier="54:5" id="HQz-xg-pfV"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="fXI-YT-xZ2">
-                                <rect key="frame" x="25" y="271" width="270" height="27"/>
+                                <rect key="frame" x="25" y="270.5" width="270" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fXI-YT-xZ2" secondAttribute="height" multiplier="10:1" id="dmP-8c-ZP3"/>
                                 </constraints>
@@ -66,7 +66,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ff-4j-Je5">
-                                <rect key="frame" x="93" y="326" width="135" height="41"/>
+                                <rect key="frame" x="92.5" y="325.5" width="135" height="41"/>
                                 <state key="normal" backgroundImage="loginButton"/>
                                 <connections>
                                     <action selector="signin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1F-Jn-nNl"/>
@@ -237,19 +237,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="ell-ZO-rMg">
-                                <rect key="frame" x="69" y="294" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="nameField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="UQ5-pj-sge"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-ob-DMm">
-                                <rect key="frame" x="69" y="337" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="9N7-ob-DMm">
+                                <rect key="frame" x="25" y="271" width="270" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9N7-ob-DMm" secondAttribute="height" multiplier="54:5" id="SG9-hM-p95"/>
+                                </constraints>
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -257,9 +249,11 @@
                                     <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="H5W-wu-Feb"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="gnU-kc-4nW">
-                                <rect key="frame" x="69" y="380" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="gnU-kc-4nW">
+                                <rect key="frame" x="25" y="304" width="270" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gnU-kc-4nW" secondAttribute="height" multiplier="54:5" id="yZ5-O5-m4v"/>
+                                </constraints>
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -267,9 +261,11 @@
                                     <action selector="passField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="mC2-ne-2PT"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="City" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="b2R-8e-Z8t">
-                                <rect key="frame" x="69" y="423" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="City" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="b2R-8e-Z8t">
+                                <rect key="frame" x="25" y="337" width="270" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b2R-8e-Z8t" secondAttribute="height" multiplier="54:5" id="CnF-kk-rF1"/>
+                                </constraints>
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -277,41 +273,85 @@
                                     <action selector="cityField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="Apj-c9-6pZ"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-gX-gOk">
-                                <rect key="frame" x="40" y="63" width="310" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fcu-gX-gOk">
+                                <rect key="frame" x="25" y="49" width="270" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fcu-gX-gOk" secondAttribute="height" multiplier="90:49" id="8CZ-TJ-tbr"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date Of Birth" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="0Rb-wv-xOb">
-                                <rect key="frame" x="69" y="512" width="277" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-Re-p6O">
-                                <rect key="frame" x="0.0" y="661" width="120" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-Re-p6O">
+                                <rect key="frame" x="0.0" y="505.5" width="125" height="42.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A5a-Re-p6O" secondAttribute="height" multiplier="120:41" id="bPM-dC-kw7"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="loginButtonSmall"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="PtF-zx-5LT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-gU-v4c">
-                                <rect key="frame" x="294" y="661" width="120" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="sign up ButtonSmall"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="EQ9-Tu-sh2">
-                                <rect key="frame" x="69" y="476" width="277" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="EQ9-Tu-sh2">
+                                <rect key="frame" x="25" y="377" width="270" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EQ9-Tu-sh2" secondAttribute="height" multiplier="135:14" id="AKF-hg-LKp"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Male"/>
                                     <segment title="Fmale"/>
                                 </segments>
                                 <color key="tintColor" red="0.40361934900000002" green="0.91124409439999998" blue="0.86951977010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Date Of Birth" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="0Rb-wv-xOb">
+                                <rect key="frame" x="25" y="420" width="270" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Rb-wv-xOb" secondAttribute="height" multiplier="54:5" id="wJL-jM-KbI"/>
+                                </constraints>
+                                <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCW-gU-v4c">
+                                <rect key="frame" x="198" y="506.5" width="122" height="41.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gCW-gU-v4c" secondAttribute="height" multiplier="120:41" id="RSY-9q-vZS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="sign up ButtonSmall"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="ell-ZO-rMg">
+                                <rect key="frame" x="25" y="238" width="270" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ell-ZO-rMg" secondAttribute="height" multiplier="54:5" id="eNG-Qb-Xd3"/>
+                                </constraints>
+                                <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="UQ5-pj-sge"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fcu-gX-gOk" firstAttribute="leading" secondItem="z5M-6S-zF8" secondAttribute="leadingMargin" constant="9" id="0lT-li-p7r"/>
+                            <constraint firstItem="uSg-cs-0Zn" firstAttribute="top" secondItem="gCW-gU-v4c" secondAttribute="bottom" constant="20" id="13M-BA-JCK"/>
+                            <constraint firstItem="ell-ZO-rMg" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="1GJ-IB-XQb"/>
+                            <constraint firstItem="gnU-kc-4nW" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="7iW-Z9-kj3"/>
+                            <constraint firstItem="9N7-ob-DMm" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="7lj-8T-sAZ"/>
+                            <constraint firstItem="fcu-gX-gOk" firstAttribute="top" secondItem="z5M-6S-zF8" secondAttribute="topMargin" constant="49" id="CuU-Ew-SKz"/>
+                            <constraint firstItem="EQ9-Tu-sh2" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="KU8-70-b4N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fcu-gX-gOk" secondAttribute="trailing" constant="9" id="LOg-6R-9Nb"/>
+                            <constraint firstItem="0Rb-wv-xOb" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="P4q-Fy-dX6"/>
+                            <constraint firstItem="b2R-8e-Z8t" firstAttribute="top" secondItem="gnU-kc-4nW" secondAttribute="bottom" constant="8" id="V2U-Zy-6Za"/>
+                            <constraint firstItem="gnU-kc-4nW" firstAttribute="top" secondItem="9N7-ob-DMm" secondAttribute="bottom" constant="8" id="WKX-ts-Pis"/>
+                            <constraint firstItem="9N7-ob-DMm" firstAttribute="top" secondItem="ell-ZO-rMg" secondAttribute="bottom" constant="8" id="f8Y-rw-jgw"/>
+                            <constraint firstItem="EQ9-Tu-sh2" firstAttribute="top" secondItem="b2R-8e-Z8t" secondAttribute="bottom" constant="15" id="fMl-bP-nb9"/>
+                            <constraint firstItem="0Rb-wv-xOb" firstAttribute="top" secondItem="EQ9-Tu-sh2" secondAttribute="bottom" constant="15" id="g3o-ZX-tUK"/>
+                            <constraint firstItem="fcu-gX-gOk" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="hOP-N2-J7v"/>
+                            <constraint firstItem="b2R-8e-Z8t" firstAttribute="centerX" secondItem="z5M-6S-zF8" secondAttribute="centerX" id="nNm-yy-z59"/>
+                            <constraint firstItem="uSg-cs-0Zn" firstAttribute="top" secondItem="A5a-Re-p6O" secondAttribute="bottom" constant="20" id="oiD-rN-B71"/>
+                            <constraint firstItem="9N7-ob-DMm" firstAttribute="centerY" secondItem="z5M-6S-zF8" secondAttribute="centerY" id="sBZ-hQ-tT1"/>
+                            <constraint firstAttribute="trailing" secondItem="gCW-gU-v4c" secondAttribute="trailing" id="uLE-Tl-x2S"/>
+                            <constraint firstItem="A5a-Re-p6O" firstAttribute="leading" secondItem="z5M-6S-zF8" secondAttribute="leading" id="wAb-Ul-5eb"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="city" destination="b2R-8e-Z8t" id="WUF-VB-gs0"/>
