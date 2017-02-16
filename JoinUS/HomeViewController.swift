@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         leadingConstraint.constant = -140
-        let profileImageGesture = UITapGestureRecognizer(target: self, action: Selector("showProfileImage"))
+        let profileImageGesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.showProfileImage))
         profileImg.addGestureRecognizer(profileImageGesture)
         profileImg.layer.borderWidth = 1
         profileImg.layer.masksToBounds = false

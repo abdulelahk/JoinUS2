@@ -204,7 +204,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gdz-yE-fkk">
             <objects>
-                <tabBarController storyboardIdentifier="GoToHome" id="n7J-BX-tQm" sceneMemberID="viewController">
+                <tabBarController useStoryboardIdentifierAsRestorationIdentifier="YES" id="n7J-BX-tQm" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ipu-5U-XSu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -413,8 +413,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PAC-fk-MtE">
-                        <barButtonItem key="leftBarButtonItem" image="listIcon" id="TTG-4V-mzU">
-                            <color key="tintColor" red="0.40432006120681763" green="0.90794605016708374" blue="0.86894011497497559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <barButtonItem key="leftBarButtonItem" image="profile" id="TTG-4V-mzU">
+                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                             <connections>
                                 <action selector="sideMenuTrigger:" destination="f4b-rc-uYK" id="HtK-bz-9RM"/>
                             </connections>
@@ -433,6 +433,7 @@
         <!--Home-->
         <scene sceneID="4nC-85-SWd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnq-1G-rSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cfQ-3O-ikI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="ic_home.png" id="Jlh-Uj-4Eo"/>
                     <toolbarItems/>
@@ -446,7 +447,6 @@
                         <segue destination="f4b-rc-uYK" kind="relationship" relationship="rootViewController" id="YbC-RK-kqk"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qnq-1G-rSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4644" y="313"/>
         </scene>
@@ -456,10 +456,10 @@
         <image name="MyEventsIcon" width="25" height="25"/>
         <image name="background" width="375" height="667"/>
         <image name="ic_home.png" width="24" height="24"/>
-        <image name="listIcon" width="24" height="24"/>
         <image name="loginButton" width="135" height="41"/>
         <image name="loginButtonSmall" width="125" height="41"/>
         <image name="logo" width="346" height="173"/>
+        <image name="profile" width="25" height="25"/>
         <image name="profileIcon" width="24" height="24"/>
         <image name="searchIcon" width="25" height="25"/>
         <image name="sign up ButtonSmall" width="122" height="41"/>
@@ -468,6 +468,6 @@
         <image name="twitterButton" width="177" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PtF-zx-5LT"/>
+        <segue reference="Bc8-kt-TTT"/>
     </inferredMetricsTieBreakers>
 </document>
