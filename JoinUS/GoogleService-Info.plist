@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>277553051190-qljodd71lh9qvt22ircs3o7q9l10sdf8.apps.googleusercontent.com</string>
+	<string>639871064496-pe9ll080fpafavgec2jopoavtamcu1ou.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.277553051190-qljodd71lh9qvt22ircs3o7q9l10sdf8</string>
+	<string>com.googleusercontent.apps.639871064496-pe9ll080fpafavgec2jopoavtamcu1ou</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBYkSqdc74cCZXqyayibrixgOJF1qnIK4w</string>
+	<string>AIzaSyCCESlWXw3WMdCO4xO5Vs5W7HMsk-8zRBA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>277553051190</string>
+	<string>639871064496</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.Abdulelah.GP</string>
+	<string>com.Abdulelah.JoinUS</string>
 	<key>PROJECT_ID</key>
-	<string>test10-75211</string>
+	<string>joinus-81678</string>
 	<key>STORAGE_BUCKET</key>
-	<string>test10-75211.appspot.com</string>
+	<string>joinus-81678.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:277553051190:ios:46304e828643d35f</string>
+	<string>1:639871064496:ios:fae8f1be733e24b4</string>
 	<key>DATABASE_URL</key>
-	<string>https://test10-75211.firebaseio.com</string>
+	<string>https://joinus-81678.firebaseio.com</string>
 </dict>
 </plist>

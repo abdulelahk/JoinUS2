@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -325,7 +325,7 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="925.27173913043487"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="Idp-Qy-IJt">
             <objects>
                 <viewController id="f4b-rc-uYK" customClass="HomeViewController" customModule="JoinUS" customModuleProvider="target" sceneMemberID="viewController">
@@ -372,7 +372,7 @@
                             <constraint firstItem="hb3-oS-eLF" firstAttribute="leading" secondItem="OyR-FY-8lO" secondAttribute="leading" id="y5c-Np-rBT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PAC-fk-MtE">
+                    <navigationItem key="navigationItem" title="Home" id="PAC-fk-MtE">
                         <barButtonItem key="leftBarButtonItem" image="listIcon" id="TTG-4V-mzU">
                             <color key="tintColor" red="0.40432006120681763" green="0.90794605016708374" blue="0.86894011497497559" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>

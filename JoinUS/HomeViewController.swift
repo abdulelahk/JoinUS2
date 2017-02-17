@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationItem.title = NSLocalizedString("PAC-fk-MtE", comment: "Class = \"UINavigationItem\"; title = \"Home\"; ObjectID = \"PAC-fk-MtE\";")
         leadingConstraint.constant = -140
         let profileImageGesture = UITapGestureRecognizer(target: self, action: Selector("showProfileImage"))
         profileImg.addGestureRecognizer(profileImageGesture)
@@ -42,15 +43,7 @@ class HomeViewController: UIViewController {
         profileImg.layer.cornerRadius = profileImg.frame.height/2
         profileImg.clipsToBounds = true
         profileImg.image = UIImage(named: "File_000.jpeg")
-
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    
-    func showProfileImage(){
-        if !ispopUpShowing{
-        popupImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.height * 0.35, height: UIScreen.main.bounds.height * 0.35))
-        popupImageView.center = self.view.center
+        popupImageView = UIImageView(frame: CGRect(x: 0, y: -500, width: UIScreen.main.bounds.height * 0.35, height: UIScreen.main.bounds.height * 0.35))
         popupImageView.image = profileImg.image
         popupImageView.contentMode = .scaleToFill
         popupImageView.layer.masksToBounds = false
@@ -60,6 +53,17 @@ class HomeViewController: UIViewController {
         popupImageView.layer.cornerRadius = popupImageView.frame.height/2
         popupImageView.clipsToBounds = true
         self.view.addSubview(popupImageView)
+
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //        self.popupImageView.center = self.view.center
+
+    func showProfileImage(){
+        if !ispopUpShowing{
+            UIView.animate(withDuration: 0.3, animations: {
+                self.popupImageView.center = self.view.center
+            })
             ispopUpShowing = !ispopUpShowing
         }
         
@@ -69,11 +73,14 @@ class HomeViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        
-        
+        print("Screen Touched!")
 
         if (touches.first!).view == popupImageView{
-        self.popupImageView.removeFromSuperview()
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.popupImageView.frame.origin = CGPoint(x: 0, y: -500)
+            })
+       
         ispopUpShowing = !ispopUpShowing
         }
     }
