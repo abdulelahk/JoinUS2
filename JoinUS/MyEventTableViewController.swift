@@ -46,7 +46,7 @@ class MyEventTableViewController: UITableViewController {
         cell.EventImage.layer.borderWidth = 1
         cell.EventImage.layer.masksToBounds = false
         cell.EventImage.layer.borderColor = UIColor.black.cgColor
-        cell.EventImage.layer.cornerRadius = cell.EventImage.frame.height/2
+        cell.EventImage.layer.cornerRadius = cell.EventImage.frame.height/4
         cell.EventImage.clipsToBounds = true
         cell.EventImage.contentMode = .scaleToFill
         cell.EventImage.image = UIImage(named:"EX.png")
