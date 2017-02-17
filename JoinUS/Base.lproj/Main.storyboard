@@ -294,7 +294,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gdz-yE-fkk">
             <objects>
-                <tabBarController useStoryboardIdentifierAsRestorationIdentifier="YES" id="n7J-BX-tQm" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="GoToHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n7J-BX-tQm" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ipu-5U-XSu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -458,7 +458,7 @@
             </objects>
             <point key="canvasLocation" x="1689.8550724637682" y="925.27173913043487"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="Idp-Qy-IJt">
             <objects>
                 <viewController id="f4b-rc-uYK" customClass="HomeViewController" customModule="JoinUS" customModuleProvider="target" sceneMemberID="viewController">
