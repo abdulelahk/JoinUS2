@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBarItem.title = NSLocalizedString("pV7-SI-f3v", comment: "")
         // Do any additional setup after loading the view, typically from a nib.
     }
     
