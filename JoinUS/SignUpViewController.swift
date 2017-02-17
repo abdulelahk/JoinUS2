@@ -15,6 +15,7 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     let datepicker = UIDatePicker()
     //!DatePicker
     
+    @IBOutlet var gender: UISegmentedControl!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -23,9 +24,16 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         //DatePicker
+        
         CreateDatePicker()
+        name.delegate = self
+        email.delegate = self
+        password.delegate = self
+        city.delegate = self
+        
         //!DatePicker
         //screen move with keyboard
+        
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         //!screen move with keyboard
@@ -33,6 +41,25 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         
      //   self.navigationController?.isNavigationBarHidden = false
 
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == name{
+            name.resignFirstResponder()
+            email.becomeFirstResponder()
+            print("Next")
+        }else if textField == email {
+            email.resignFirstResponder()
+            password.becomeFirstResponder()
+        }else if textField == password{
+            password.resignFirstResponder()
+            city.becomeFirstResponder()
+        }else{
+            city.resignFirstResponder()
+        }
+        print("Next")
+
+        return true
     }
     
     func keyboardWillShow(notification: NSNotification) {
@@ -61,9 +88,9 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        let DoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(donePressed))
+        let DoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePressed))
         toolbar.setItems([DoneButton], animated: false)
-
+        
         datePicker.inputAccessoryView = toolbar
         datePicker.inputView = datepicker
     }
@@ -88,28 +115,10 @@ class SignUpViewController: UIViewController ,UITextFieldDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func RemoveInitialText(sender : UITextField){
-        
-        if  ((sender.text == "Name") ||  (sender.text == "Email") ||  (sender.text == "Password") ||  (sender.text == "City") ||  (sender.text == "Password")){
-            
-            sender.text = ""
-        }
-    }
+    
     
     //clear Field
-    @IBAction func nameField(_ sender: Any) {
-        RemoveInitialText(sender: sender as! UITextField)
-    }
-    @IBAction func emailField(_ sender: Any) {
-         RemoveInitialText(sender: sender as! UITextField)
-    }
-
-    @IBAction func passField(_ sender: Any) {
-         RemoveInitialText(sender: sender as! UITextField)
-    }
-    @IBAction func cityField(_ sender: Any) {
-         RemoveInitialText(sender: sender as! UITextField)
-    }
+    
     //!clear Field
     
 

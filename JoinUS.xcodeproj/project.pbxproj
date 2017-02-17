@@ -25,7 +25,7 @@
 		41FC4F3A1E56054E000A3828 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41FC4F391E56054E000A3828 /* GoogleService-Info.plist */; };
 		62BEA31AEFFDB9D30F39BF99 /* Pods_JoinUSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924561FBF9AE33B50DD5E7FA /* Pods_JoinUSUITests.framework */; };
 		CC1A4847722723F42AEE5F5C /* Pods_JoinUS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55952D5116041CB057C1407C /* Pods_JoinUS.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		F5D928531E5652C4005B8679 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D928521E5652C4005B8679 /* RegistrationViewController.swift */; };
+		F5D928531E5652C4005B8679 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D928521E5652C4005B8679 /* CreateEventViewController.swift */; };
 		F5D928551E5654D5005B8679 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D928541E5654D5005B8679 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,7 +80,7 @@
 		65F81F5B86E4EFEE46691779 /* Pods-JoinUS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUS/Pods-JoinUS.release.xcconfig"; sourceTree = "<group>"; };
 		924561FBF9AE33B50DD5E7FA /* Pods_JoinUSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoinUSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1514244CFDC1B22D4ABEBB5 /* Pods-JoinUSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JoinUSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JoinUSUITests/Pods-JoinUSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F5D928521E5652C4005B8679 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		F5D928521E5652C4005B8679 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		F5D928541E5654D5005B8679 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -153,7 +153,7 @@
 				41FC4F391E56054E000A3828 /* GoogleService-Info.plist */,
 				41B442181E50E2E30043093F /* LoginViewController.swift */,
 				41B4421A1E50E2E30043093F /* Main.storyboard */,
-				F5D928521E5652C4005B8679 /* RegistrationViewController.swift */,
+				F5D928521E5652C4005B8679 /* CreateEventViewController.swift */,
 				41765BE51E5343B8007E4C37 /* HomeViewController.swift */,
 				41B442481E50E9E60043093F /* SignUpViewController.swift */,
 				41FC4F2D1E550703000A3828 /* File_000.jpeg */,
@@ -485,7 +485,7 @@
 			files = (
 				41765BE81E5347D3007E4C37 /* MyProfileViewController.swift in Sources */,
 				41765BEC1E534837007E4C37 /* MyEventsViewController.swift in Sources */,
-				F5D928531E5652C4005B8679 /* RegistrationViewController.swift in Sources */,
+				F5D928531E5652C4005B8679 /* CreateEventViewController.swift in Sources */,
 				41765BEA1E534808007E4C37 /* SearchViewController.swift in Sources */,
 				41B442191E50E2E30043093F /* LoginViewController.swift in Sources */,
 				41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */,
@@ -651,7 +651,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8R2CPVVYA2;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Abdulelah.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -667,7 +667,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8R2CPVVYA2;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Abdulelah.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
