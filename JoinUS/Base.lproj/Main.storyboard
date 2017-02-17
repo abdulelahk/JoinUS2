@@ -167,9 +167,6 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="gbV-AB-UVa"/>
-                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xem-Ep-Yax">
                                 <rect key="frame" x="25" y="49" width="270" height="147"/>
@@ -562,16 +559,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Address" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="rB3-rD-IwT">
-                                <rect key="frame" x="25" y="410.5" width="270" height="25"/>
+                                <rect key="frame" x="25" y="460" width="270" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rB3-rD-IwT" secondAttribute="height" multiplier="54:5" id="DPh-sZ-cxd"/>
                                 </constraints>
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="a4O-jh-Kh3"/>
-                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="CGT-8U-hOf">
                                 <rect key="frame" x="25" y="49" width="270" height="147"/>
@@ -580,14 +574,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23K-Rz-1w4">
-                                <rect key="frame" x="0.0" y="455.5" width="125" height="43"/>
+                                <rect key="frame" x="0.0" y="505" width="125" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="23K-Rz-1w4" secondAttribute="height" multiplier="120:41" id="hxT-Qd-Eqf"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="BackButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyo-qY-DrI">
-                                <rect key="frame" x="198" y="457" width="122" height="42"/>
+                                <rect key="frame" x="198" y="506" width="122" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Tyo-qY-DrI" secondAttribute="height" multiplier="120:41" id="YKX-qK-w6o"/>
                                 </constraints>
@@ -597,7 +591,7 @@
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MtC-LA-hcR">
-                                <rect key="frame" x="0.0" y="206" width="320" height="179.5"/>
+                                <rect key="frame" x="0.0" y="206" width="320" height="229"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -645,6 +639,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iI2-qK-gPO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0is-ld-H5g">
+                                <rect key="frame" x="0.0" y="505" width="125" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0is-ld-H5g" secondAttribute="height" multiplier="125:43" id="3u9-cT-wEc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="BackButton"/>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Age Limitation" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-90-nMZ">
                                 <rect key="frame" x="25" y="305" width="270" height="25"/>
                                 <constraints>
@@ -653,11 +654,8 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="cvO-2n-bW8"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Category" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="SPi-Tv-lll">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="SPi-Tv-lll">
                                 <rect key="frame" x="25" y="338" width="270" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SPi-Tv-lll" secondAttribute="height" multiplier="54:5" id="Zcs-cZ-Qvo"/>
@@ -665,9 +663,6 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="YGh-Ya-DaR"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Available Seats" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="Cc2-KG-ccb">
                                 <rect key="frame" x="25" y="371" width="270" height="25"/>
@@ -677,9 +672,6 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="wHZ-8Y-9TN"/>
-                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JSK-9g-pQC">
                                 <rect key="frame" x="25" y="49" width="270" height="147"/>
@@ -688,7 +680,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-Cc-UBW">
-                                <rect key="frame" x="198" y="457" width="122" height="42"/>
+                                <rect key="frame" x="198" y="506" width="122" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pdC-Cc-UBW" secondAttribute="height" multiplier="120:41" id="U2k-aS-qjv"/>
                                 </constraints>
@@ -705,9 +697,6 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="Nm3-81-UBh"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Event Date" textAlignment="center" minimumFontSize="17" background="textfieldButton" translatesAutoresizingMaskIntoConstraints="NO" id="yge-Sd-vNy">
                                 <rect key="frame" x="25" y="239" width="270" height="25"/>
@@ -717,17 +706,7 @@
                                 <color key="textColor" red="0.36956753660000002" green="0.84771187290000005" blue="0.81395173649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="emailField:" destination="8Hc-Ik-B4c" eventType="editingDidBegin" id="2gE-Cl-6rz"/>
-                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0is-ld-H5g">
-                                <rect key="frame" x="0.0" y="456" width="125" height="43"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="0is-ld-H5g" secondAttribute="height" multiplier="125:43" id="3u9-cT-wEc"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="BackButton"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
