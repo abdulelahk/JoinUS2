@@ -320,7 +320,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Gdz-yE-fkk">
             <objects>
-                <tabBarController useStoryboardIdentifierAsRestorationIdentifier="YES" id="n7J-BX-tQm" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="GoToHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n7J-BX-tQm" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Ipu-5U-XSu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
