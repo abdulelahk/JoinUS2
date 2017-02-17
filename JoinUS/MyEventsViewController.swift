@@ -12,7 +12,7 @@ class MyEventsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var ref = FIRDatabase.database().reference()
+        let ref = FIRDatabase.database().reference()
         /*
         newEvent.setValue("Abdulelah")
         newEvent.child("name").setValue("football")
