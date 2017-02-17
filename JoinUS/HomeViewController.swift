@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationItem.title = NSLocalizedString("PAC-fk-MtE", comment: "Class = \"UINavigationItem\"; title = \"Home\"; ObjectID = \"PAC-fk-MtE\";")
         leadingConstraint.constant = -140
-        let profileImageGesture = UITapGestureRecognizer(target: self, action: Selector("showProfileImage"))
+        let profileImageGesture = UITapGestureRecognizer(target: self, action: #selector(HomeViewController.showProfileImage))
         profileImg.addGestureRecognizer(profileImageGesture)
         profileImg.layer.borderWidth = 1
         profileImg.layer.masksToBounds = false

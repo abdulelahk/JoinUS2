@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
-        /*
+        
         let firebaseAuth = FIRAuth.auth()
         do {
             try firebaseAuth?.signOut()
@@ -30,7 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print ("Error signing out: %@", signOutError)
         }
  
- */
         
         if let usr = FIRAuth.auth()?.currentUser {
             // User is signed in.
