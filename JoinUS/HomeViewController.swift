@@ -43,8 +43,10 @@ class HomeViewController: UIViewController {
         profileImg.layer.cornerRadius = profileImg.frame.height/2
         profileImg.clipsToBounds = true
         profileImg.image = UIImage(named: "File_000.jpeg")
-        popupImageView = UIImageView(frame: CGRect(x: 0, y: -500, width: UIScreen.main.bounds.height * 0.35, height: UIScreen.main.bounds.height * 0.35))
+        popupImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.height * 0.35, height: UIScreen.main.bounds.height * 0.35))
         popupImageView.image = profileImg.image
+        popupImageView.frame.origin = profileImg.frame.origin
+        popupImageView.isHidden = true
         popupImageView.contentMode = .scaleToFill
         popupImageView.layer.masksToBounds = false
         popupImageView.isUserInteractionEnabled = true
@@ -64,6 +66,7 @@ class HomeViewController: UIViewController {
             UIView.animate(withDuration: 0.3, animations: {
                 self.popupImageView.center = self.view.center
             })
+            popupImageView.isHidden = false
             ispopUpShowing = !ispopUpShowing
         }
         
@@ -77,11 +80,9 @@ class HomeViewController: UIViewController {
 
         if (touches.first!).view == popupImageView{
             
-            UIView.animate(withDuration: 0.3, animations: {
-                self.popupImageView.frame.origin = CGPoint(x: 0, y: -500)
-            })
-       
-        ispopUpShowing = !ispopUpShowing
+            self.popupImageView.center = self.profileImg.center
+            popupImageView.isHidden = true
+            ispopUpShowing = !ispopUpShowing
         }
     }
     
