@@ -8,10 +8,12 @@
 
 import UIKit
 import Firebase
-class MyEventsViewController: UIViewController {
+class MyEventsViewController: UIViewController, UITableViewDelegate {
     
+    @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.backgroundView = UIImageView(image: UIImage(named: "BG.png"))
         let ref = FIRDatabase.database().reference()
         /*
         newEvent.setValue("Abdulelah")
