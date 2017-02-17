@@ -8,10 +8,12 @@
 
 import UIKit
 import Firebase
-class MyEventsViewController: UIViewController {
+class MyEventsViewController: UIViewController, UITableViewDelegate {
     
+    @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.backgroundView = UIImageView(image: UIImage(named: "BG.png"))
         let ref = FIRDatabase.database().reference()
         /*
         newEvent.setValue("Abdulelah")
@@ -46,7 +48,17 @@ class MyEventsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
     
+    private func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     
 }
 
