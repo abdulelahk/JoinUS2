@@ -165,9 +165,7 @@
 				41FC4F391E56054E000A3828 /* GoogleService-Info.plist */,
 				41B442181E50E2E30043093F /* LoginViewController.swift */,
 				41B4421A1E50E2E30043093F /* Main.storyboard */,
-				F58CE3CE1E57A02E004F142C /* MyEventTableViewController.swift */,
-				F58CE3CC1E579F22004F142C /* cellTableViewCell.swift */,
-				F5D928521E5652C4005B8679 /* RegistrationViewController.swift */,
+				F5D928521E5652C4005B8679 /* CreateEventViewController.swift */,
 				41765BE51E5343B8007E4C37 /* HomeViewController.swift */,
 				41B442481E50E9E60043093F /* SignUpViewController.swift */,
 				41FC4F2D1E550703000A3828 /* File_000.jpeg */,
@@ -506,8 +504,7 @@
 			files = (
 				41765BE81E5347D3007E4C37 /* MyProfileViewController.swift in Sources */,
 				41765BEC1E534837007E4C37 /* MyEventsViewController.swift in Sources */,
-				F58CE3CF1E57A02E004F142C /* MyEventTableViewController.swift in Sources */,
-				F5D928531E5652C4005B8679 /* RegistrationViewController.swift in Sources */,
+				F5D928531E5652C4005B8679 /* CreateEventViewController.swift in Sources */,
 				41765BEA1E534808007E4C37 /* SearchViewController.swift in Sources */,
 				41B442191E50E2E30043093F /* LoginViewController.swift in Sources */,
 				41B442491E50E9E60043093F /* SignUpViewController.swift in Sources */,
@@ -675,7 +672,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D63S883E2L;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoathWare.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -691,7 +688,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D63S883E2L;
 				INFOPLIST_FILE = JoinUS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MoathWare.JoinUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
