@@ -30,6 +30,7 @@
 		F58CE3CF1E57A02E004F142C /* MyEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE3CE1E57A02E004F142C /* MyEventTableViewController.swift */; };
 		F58CE3D31E57AF64004F142C /* EX.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CE3D21E57AF64004F142C /* EX.png */; };
 		F58CE3D51E57B18D004F142C /* EP.png in Resources */ = {isa = PBXBuildFile; fileRef = F58CE3D41E57B18D004F142C /* EP.png */; };
+		F58CE3D91E57C260004F142C /* MyProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CE3D81E57C260004F142C /* MyProfileTableViewController.swift */; };
 		F5D928531E5652C4005B8679 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D928521E5652C4005B8679 /* RegistrationViewController.swift */; };
 		F5D928551E5654D5005B8679 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D928541E5654D5005B8679 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		F58CE3CE1E57A02E004F142C /* MyEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEventTableViewController.swift; sourceTree = "<group>"; };
 		F58CE3D21E57AF64004F142C /* EX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EX.png; sourceTree = "<group>"; };
 		F58CE3D41E57B18D004F142C /* EP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EP.png; sourceTree = "<group>"; };
+		F58CE3D81E57C260004F142C /* MyProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewController.swift; sourceTree = "<group>"; };
 		F5D928521E5652C4005B8679 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		F5D928541E5654D5005B8679 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 				41B4421F1E50E2E30043093F /* LaunchScreen.storyboard */,
 				41B442221E50E2E30043093F /* Info.plist */,
 				41765BE71E5347D3007E4C37 /* MyProfileViewController.swift */,
+				F58CE3D81E57C260004F142C /* MyProfileTableViewController.swift */,
 				41765BE91E534808007E4C37 /* SearchViewController.swift */,
 				41765BEB1E534837007E4C37 /* MyEventsViewController.swift */,
 			);
@@ -511,6 +514,7 @@
 				41B442171E50E2E30043093F /* AppDelegate.swift in Sources */,
 				41765BE61E5343B8007E4C37 /* HomeViewController.swift in Sources */,
 				F58CE3CD1E579F22004F142C /* cellTableViewCell.swift in Sources */,
+				F58CE3D91E57C260004F142C /* MyProfileTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
