@@ -1,10 +1,12 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
 
-class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
+    @IBOutlet var imageButton: UIButton!
 
     @IBOutlet weak var Map: MKMapView!
     @IBOutlet var EventTime: UITextField!
@@ -15,18 +17,14 @@ class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UIT
 
     @IBOutlet var AvailableSeats: UITextField!
     
-    @IBOutlet var AgeLimitation: UITextField!
-    
-    @IBOutlet var EventLocation: UITextField!
-    
     @IBOutlet var EventDes: UITextView!
     
     @IBOutlet var category: UITextField!
     
     var categories = ["Sport","Programming","Business","Photography","Social","Other"]
     
-    
-    
+    let imagePicker = UIImagePickerController()
+    var selectedImage : UIImage?
     //Map
     let maneger = CLLocationManager()
     
@@ -48,6 +46,12 @@ class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        EventName.delegate = self
+        createToolBar()
+        self.imagePicker.delegate = self
+       let DesTapped = UITapGestureRecognizer(target: self, action: Selector("clearDes"))
+        EventDes.addGestureRecognizer(DesTapped)
         categoryPicker = UIPickerView()
         categoryPicker.delegate = self
         categoryPicker.dataSource = self
@@ -64,6 +68,24 @@ class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UIT
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+      print("Touched!!")
+            EventName.resignFirstResponder()
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        
+        return false
+    }
+        func clearDes(){
+            if EventDes.text == "Event Description."{
+            EventDes.text = ""
+        }
+            EventDes.becomeFirstResponder()
+    }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -102,6 +124,8 @@ class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UIT
     func createDatePicker(){
         
         datepicker.datePickerMode = .dateAndTime
+        datepicker.minimumDate = Date()
+        
         
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
@@ -120,13 +144,69 @@ class CreateEventViewController: UIViewController, CLLocationManagerDelegate,UIT
         self.view.endEditing(true)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func createToolBar(){
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        let DoneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(donePressed))
+        toolbar.setItems([DoneButton], animated: false)
+        
+        EventDes.inputAccessoryView = toolbar
+        AvailableSeats.inputAccessoryView = toolbar
+        
+    }
+    
+    func donePressed(){
+        
+        self.view.endEditing(true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            selectedImage = pickedImage
+            
+        }
+        
+        picker.dismiss(animated: true) { 
+            self.imageButton.setBackgroundImage(self.selectedImage, for: .normal)
+        }
+        
     }
 
  
     @IBAction func cameraIconTapped(_ sender: UIButton) {
+        
+        let Alert = UIAlertController(title: "Pick image", message: nil, preferredStyle: .actionSheet)
+        
+        let cameraAction = UIAlertAction(title: "From camera", style: .default) { (action) in
+
+            self.imagePicker.sourceType = .camera
+            self.imagePicker.allowsEditing = true
+            self.imagePicker.showsCameraControls = true
+            
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }
+        
+       let libraryAction = UIAlertAction(title: "From library", style: .default) { (action) in
+        
+        self.imagePicker.sourceType = .photoLibrary
+        self.imagePicker.allowsEditing = true
+        
+        
+        self.present(self.imagePicker, animated: true, completion: nil)
+
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        Alert.addAction(cameraAction)
+        Alert.addAction(libraryAction)
+        Alert.addAction(cancelAction)
+ 
+ 
+        print(Alert.view.subviews.count)
+        self.present(Alert, animated: true, completion: nil)
     }
     
     @IBAction func createEvent(_ sender: UIButton) {

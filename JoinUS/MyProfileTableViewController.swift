@@ -18,8 +18,10 @@ class MyProfileTableViewController: UITableViewController {
     var ispopUpShowing = false
     //!image
 
+    @IBOutlet var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.backgroundView = UIImageView(image: UIImage(named: "BG.png"))
         //image
         self.navigationController?.navigationItem.title = NSLocalizedString("PAC-fk-MtE", comment: "Class = \"UINavigationItem\"; title = \"Home\"; ObjectID = \"PAC-fk-MtE\";")
         profileImg.layer.borderWidth = 1
@@ -48,98 +50,62 @@ class MyProfileTableViewController: UITableViewController {
     
     @IBAction func Logout(_ sender: Any) {
         
-        let firebaseAuth = FIRAuth.auth()
-        let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        spinner.center = self.view.center
-        spinner.hidesWhenStopped = true
-        spinner.activityIndicatorViewStyle = .whiteLarge
-        self.view.addSubview(spinner)
-        spinner.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
         
+        let logoutAlert = UIAlertController(title: "Logout", message: "Are you sure you want to logout?", preferredStyle: .alert)
         
-        do {
+        let logoutAction = UIAlertAction(title: "Yes", style: .destructive) { (action) in
+            
+            let firebaseAuth = FIRAuth.auth()
+            let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            spinner.center = self.view.center
+            spinner.hidesWhenStopped = true
+            spinner.activityIndicatorViewStyle = .whiteLarge
+            self.view.addSubview(spinner)
+            spinner.startAnimating()
+            UIApplication.shared.beginIgnoringInteractionEvents()
             
             
-            try firebaseAuth?.signOut()
-            
-            spinner.stopAnimating()
-            UIApplication.shared.endIgnoringInteractionEvents()
-            
-            self.performSegue(withIdentifier: "GoToLogin", sender: self)
-            
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-            
-            spinner.stopAnimating()
-            UIApplication.shared.endIgnoringInteractionEvents()
-            
-            let alert = UIAlertController(title: nil, message: "Error while logging out! Try Again!", preferredStyle: .alert)
-            
-            
-            self.present(alert, animated: true, completion: {
-                if #available(iOS 10.0, *) {
-                    Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
-                        alert.dismiss(animated: true, completion: nil)
-                        
-                    })
-                } else {
-                    // Fallback on earlier versions
-                }
+            do {
                 
-            })
-        }
-    }
-    /*
-    //image
-    @IBAction func Logout(_ sender: Any) {
-        
-        let firebaseAuth = FIRAuth.auth()
-        let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        spinner.center = self.view.center
-        spinner.hidesWhenStopped = true
-        spinner.activityIndicatorViewStyle = .whiteLarge
-        self.view.addSubview(spinner)
-        spinner.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
-        
-        
-        do {
-            
-            
-            try firebaseAuth?.signOut()
-            
-            spinner.stopAnimating()
-            UIApplication.shared.endIgnoringInteractionEvents()
-            
-            self.performSegue(withIdentifier: "GoToLogin", sender: self)
-            
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-            
-            spinner.stopAnimating()
-            UIApplication.shared.endIgnoringInteractionEvents()
-            
-            let alert = UIAlertController(title: nil, message: "Error while logging out! Try Again!", preferredStyle: .alert)
-            
-            
-            self.present(alert, animated: true, completion: {
-                if #available(iOS 10.0, *) {
-                    Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
-                        alert.dismiss(animated: true, completion: nil)
-                        
-                    })
-                } else {
-                    // Fallback on earlier versions
-                }
                 
-            })
+                try firebaseAuth?.signOut()
+                
+                spinner.stopAnimating()
+                UIApplication.shared.endIgnoringInteractionEvents()
+                
+                self.performSegue(withIdentifier: "GoToLogin", sender: self)
+                
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+                
+                spinner.stopAnimating()
+                UIApplication.shared.endIgnoringInteractionEvents()
+                
+                let alert = UIAlertController(title: nil, message: "Error while logging out! Try Again!", preferredStyle: .alert)
+                
+                
+                self.present(alert, animated: true, completion: {
+                    if #available(iOS 10.0, *) {
+                        Timer.scheduledTimer(withTimeInterval: 2, repeats: false, block: { (timer) in
+                            alert.dismiss(animated: true, completion: nil)
+                            
+                        })
+                    } else {
+                        // Fallback on earlier versions
+                    }
+                    
+                })
+            }
         }
         
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
         
+        logoutAlert.addAction(logoutAction)
+        logoutAlert.addAction(cancelAction)
         
-    }
- */
+        self.present(logoutAlert, animated: false, completion: nil)
+        
+    } 
     func showProfileImage(){
         if !ispopUpShowing{
             UIView.animate(withDuration: 0.3, animations: {
@@ -169,7 +135,7 @@ class MyProfileTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
+/*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
@@ -179,7 +145,7 @@ class MyProfileTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
+*/
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class MyEventTableViewController: UITableViewController {
 
     @IBOutlet var tableview: UITableView!
@@ -19,6 +19,35 @@ class MyEventTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        let ref = FIRDatabase.database().reference()
+        /*
+         newEvent.setValue("Abdulelah")
+         newEvent.child("name").setValue("football")
+         newEvent.child("location").setValue("45.555346,25.5537753")
+         newEvent.child("category").setValue("sport")
+         */
+        
+        /*
+         var event = ref.child("events").childByAutoId()
+         
+         event.setValue(["name":"iOS","location":"338843","category":"programming"])
+         */
+        /*
+         event.child("name").setValue("YourEvent")
+         event.child("location").setValue("45.555346,25.5537753")
+         event.child("category").setValue("programming")
+         
+         */
+        
+        
+        ref.child("events").queryOrdered(byChild: "category").queryEqual(toValue: "programming").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? NSDictionary
+            print(value)
+        })
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
